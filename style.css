@@ -1,20 +1,47 @@
+/* https://tailwindcss.com/docs/customizing-colors 
+orange palette   */
+@font-face {
+    font-family: "interregular";
+    src:
+      url("fonts/Inter-Medium.woff2") format("woff2"),
+      url("fonts/Inter-Medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 * {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     text-decoration: none;
+    font-family: "interregular", serif;
+   
 }
+
+:root {
+    
+    font-size: 16px;
+}
+
 
 /* main grid container */
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 aside {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.35fr 0.9fr 2fr; 
+    align-items: start;
+    background-color: #f97316;
+    color: #fff7ed;
+    height: 100vh;
+  
 }
 
 header {
@@ -30,17 +57,94 @@ main {
 
 /* sidebar grid */
 
-
+/*
 .sidebar-home-nav,
 .settings-nav {
     margin: 20% 0 0 10%;
+}  */
+
+
+.logo-dash {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2; 
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    margin-top: 5%;
 }
+
 
 .sidebar-home-nav img,
 .settings-nav img {
     width: 1.5rem;
     height: 1.5rem;
+    justify-self: center;
+   
+   
+  
 }
+
+.light-orange path {
+    fill: #ffedd5;
+}
+
+
+.logo-dash-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    align-self: center;
+    justify-self: center;
+   
+}
+
+.logo-dash h1 {
+    align-self: center;
+    margin-left: 5%;
+  
+}
+
+
+
+
+.sidebar-home-nav {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+ 
+
+   
+}
+
+.settings-nav {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4; 
+}
+
+.sidebar-home-nav > a {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    grid-auto-rows: 1fr;
+    
+}
+
+.sidebar-home-nav p,
+.settings-nav p {
+    align-self: center;
+    margin-left: 5%;
+    color: #fff7ed;
+    font-weight: bold;
+   
+}
+
+.settings-nav > a {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    margin-top: 2.5%;
+}
+
+.sidebar-home-nav > a {
+    margin-top: 2.5%; 
+}
+
+/* header */
 
 .header-top-nav {
     display: grid;
@@ -48,17 +152,13 @@ main {
     grid-auto-rows: 1fr;
 }
 
-.logo-dash {
-    display: flex; 
+.search-bar img,
+.bell {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
-.logo-dash-img {
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 5px;
-}
-
-.logo-dash > h1 {
-  align-self: center;
+.tiger-small {
+    width: 60px;
+    height: 60px;
 }
