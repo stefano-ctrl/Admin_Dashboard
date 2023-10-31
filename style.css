@@ -36,8 +36,8 @@ orange palette   */
 /* main grid container */
 body {
     display: grid;
-    grid-template-columns: 0.5fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 0.70fr 4fr;
+
 }
 
 aside {
@@ -104,7 +104,6 @@ main {
 
 .logo-dash h1 {
     align-self: center;
-    margin-left: 5%;
   
 }
 
@@ -134,7 +133,6 @@ main {
 .sidebar-home-nav p,
 .settings-nav p {
     align-self: center;
-    margin-left: 5%;
     color: #fff7ed;
     font-weight: bold;
    
@@ -155,7 +153,7 @@ main {
 header {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(25px, 50px));
-    margin: 15px 35px; 
+    margin: 20px 35px 10px 35px; 
 }
 
 .header-top-nav {
@@ -187,9 +185,9 @@ header {
 
 
 .tiger-small {
-    width: 50px;
-    height: 50px;
-    margin-top: -15px;
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
    
 }
 
@@ -217,10 +215,7 @@ input[class="search"] {
     font-size: 0.9rem;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: 5px;
-    justify-self: end;
-    margin-right: 15px;
-    
+    justify-self: center;    
    
 }
 
@@ -247,10 +242,7 @@ input[class="search"] {
 
 .account-twitter p {
     display: inline-block;
-    position: relative;
-    top: -15px; 
-    line-height: 30px;
-    font-size: 0.75rem;
+    line-height: 25px;
     font-weight: bold;
     font-size: 0.75rem;
     letter-spacing: 1px;
@@ -282,8 +274,8 @@ input[class="search"] {
 
 
 .tiger-big {
-    width: 85px;
-    height: 85px; 
+    width: 55px;
+    height: 55px; 
 }
 
 
@@ -303,7 +295,7 @@ main h2 {
 
 .projects-container {
     display: grid;
-    grid-template-columns: 4fr 1fr; 
+    grid-template-columns: 3fr 1fr; 
     grid-template-rows: 0.1fr 9fr;
     gap: 20px;
 
@@ -333,7 +325,7 @@ main h2 {
 
 .article-projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
@@ -347,5 +339,34 @@ main h2 {
     width: 1.3rem;
     height: 1.3rem;
     margin: 0 10px 10px 10px;
+    
+}
+
+
+/* main sidebar right announcements */
+
+
+.aside-main-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 0.1fr 0.45fr 0.45fr; 
+}
+
+.announcements-articles {
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    padding: 20px 30px;
+   
+}
+
+.trending-articles {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 30px; 
+}
+
+.aside-main-container > h2 {
+    margin-bottom: 20px;
     
 }
