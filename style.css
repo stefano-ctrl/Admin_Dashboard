@@ -406,7 +406,8 @@ main h2 {
 /* trending */ 
 
 .trending-container h2 {
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .trending-articles img {
