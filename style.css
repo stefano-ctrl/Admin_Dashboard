@@ -180,7 +180,7 @@ header {
 
 .search-bar img {
     align-self: center;
-    justify-self: center;
+    justify-self: start;
 }
 
 
@@ -201,6 +201,7 @@ input[class="search"] {
     height: 25px; 
     min-width: 100px; 
     max-width: 75%;
+    margin-left: -15px; 
 
 }
 
@@ -284,7 +285,7 @@ input[class="search"] {
 main {
     background-color: #e5e7eb;
     box-shadow: 0 -2.5px 2px #cbd5e1; 
-    padding: 30px 27.5px;
+    padding: 20px 27.5px;
 }
 
 main h2 {
@@ -312,21 +313,27 @@ main h2 {
     padding: 30px 20px; 
     box-shadow: -7.5px 0 0 #fcd34d;
     display: grid;
-    grid-template-rows: 90% 10%;
+    grid-template-rows: 80% 20%;
+
+  
 }
 
+.project-box h3 {
+    font-size: 1rem;
+}
 
 
 .project-box p {
     font-family: "interregular-light";
     letter-spacing: 0.5px;
     margin-top: 5px;
+    font-size: 0.9rem;
 }
 
 .article-projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
 }
@@ -356,7 +363,8 @@ main h2 {
     background-color: white;
     border-radius: 5px;
     display: grid;
-    padding: 20px 30px;
+    padding: 25px 30px;
+
    
 }
 
@@ -369,4 +377,71 @@ main h2 {
 .aside-main-container > h2 {
     margin-bottom: 20px;
     
+    
+}
+
+.announcements-articles > div p{
+    font-family: "interregular-light", sans-serif;
+    font-size: 0.8rem;
+    
+}
+
+.announcements-articles h3 {
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+.announcements-articles > div:first-of-type {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+.announcements-articles > div:last-of-type {
+    padding-top: 15px;
+    border-top: 1px solid #e5e7eb;;
+}
+
+.announcements-articles > div:nth-of-type(2) {
+    padding: 15px 0; 
+}
+
+/* trending */ 
+
+.trending-container h2 {
+    padding-top: 30px;
+}
+
+.trending-articles img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.trending-articles div {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    
+}
+
+.trending-articles div a {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.trending-articles div h4 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 0.8rem;
+ 
+    
+}
+
+.trending-articles div p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-family: "interregular-light", sans-serif;
+    font-weight: lighter;
+}
+
+.trending-articles div:first-of-type,
+.trending-articles div:nth-of-type(2),
+.trending-articles div:nth-of-type(3) {
+    padding-bottom: 10px;
 }
